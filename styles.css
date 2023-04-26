@@ -1,0 +1,16 @@
+* {
+    color-scheme: dark;
+    color: greenyellow;
+    font-family: SegoeUIVF, Segoe UI, SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.gray-subsection {
+    background-color: rgba(52,53,65);
+    color: white;
+}
+
+.heading-text {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+}
