@@ -17,3 +17,7 @@
 nav ul {
     list-style-type: none;
 }
+
+.nav-link:hover {
+    background-color: rgb(25, 55, 109);
+}
