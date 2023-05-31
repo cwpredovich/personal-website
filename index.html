@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style type="text/css">
+        .card-flip {
+            perspective: 1000px;
+            &:hover .flip,
+            &.hover .flip {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .card-flip,
+        .front,
+        .back {
+            width: 100%;
+            height: 300px;
+        }
+
+        .flip {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .front,
+        .back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .front {
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+      </style>
     <title>CP's Web Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,7 +108,7 @@
           Growing up in California, technology was ever-present and constantly evolving all around me. I discovered early that my passion for helping people and working with technology could expand and allow me to grow into new, exciting and more challenging roles.
         </p>
         <p>
-          Since starting as a full stack developer, I have worked on high impact projects, including a front-end project aimed at improving workplace efficiency for Verizon by unifying multiple internal applications into one place. I have also worked on a full stack project for CoFi that speeds up the payroll process which construction contractors and sub-contractors have to go through, called the draw process. And most recently, I've been working on a full stack app for a startup called Skillco where we're empowering college students and alumni to find meaninful careers.
+          Since starting as a full stack developer, I have worked on high impact projects, including a front-end project aimed at improving workplace efficiency for Verizon by unifying multiple internal applications into one place. I have also worked on a full stack app for a company called CoFi. The app speeds up the payroll process which construction contractors and sub-contractors have to go through, called the draw process. And most recently, I've been working on a full stack app for a startup called Skillco where we're empowering college students and alumni to find meaninful careers.
         </p>  
         <p>
             I'm still learning and building, and now I'm looking for a new opportunity. I look forward to finding out where this journey takes me, and I am excited to see how my passion for technology will expand and flourish in the future.
@@ -151,8 +190,8 @@
                   </div>
                 </div>
                 <div class="back">
-                  <div class="card">
-                    <p>OneTool was built to eliminate the need for a multitude of different tools and applications. I implemented a search featuring allowing users to search the company knowledge base and fields for taking notes during tech support calls. The feature I'm most proud of is one that I referred to as the auto-coach feature, simply labeled as Get Help on the button.</p>
+                  <div class="card  w3-text-grey">
+                    <p>OneTool was built to eliminate the need for a multitude of different tools and applications. I implemented a search feature allowing users to search the company knowledge base and fields for taking notes during tech support calls. The feature I'm most proud of is one that I referred to as the auto-coach feature, with a button simply labeled "Get Help" When a tech support agent got stuck and wasn't sure how to solve a problem, they could click Get Help, and the auto-coach feature would search through their notes and suggest knowledge base articles based on the problem and the notes they had taken.</p>
                   </div>
                 </div>
               </div>
